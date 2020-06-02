@@ -2,6 +2,14 @@
 
 use Illuminate\Support\Str;
 
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$host = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$database = substr($url["path"], 1);
+
+
 return [
 
     /*
@@ -15,7 +23,9 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mysql://b379c33e77d6d1:8759d928@eu-cdbr-west-03.cleardb.net/heroku_a1f38ec375c5502?reconnect=true'),
+
+
 
     /*
     |--------------------------------------------------------------------------
@@ -43,6 +53,19 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
+        'mysql://b379c33e77d6d1:8759d928@eu-cdbr-west-03.cleardb.net/heroku_a1f38ec375c5502?reconnect=true' => array(
+            'driver' => 'mysql',
+            'host' => $host,
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+        ),
+
+
+/*
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
@@ -61,7 +84,7 @@ return [
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
-        ],
+        ], */
 
         'pgsql' => [
             'driver' => 'pgsql',
