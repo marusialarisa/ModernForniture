@@ -27,12 +27,6 @@ Route::get('/', function () {
 Route::get('info_product/{id}', 'HomeController@show')
     ->name('home.show');
 Route::resource('info_product','HomeController@show');
-/*
-Route::get('info_product/{id}', 'UserController@show')
-    ->name('user.show');
-Route::resource('info_product','UserController@show');
-
-*/
 
 
 Route::get("search", "HomeController@search");
@@ -60,12 +54,14 @@ Route::get('taburetes', 'HomeController@taburetes');
 
 
 
+//Route::resource('cart', 'CartController@index');
+Route::get('cart', 'CartController@index')->name('cart.index');
+//Route::resource('product', 'CartController@index');
 
-/*
-Route::get('armarios', 'HomeController@armarios')->name('home.armarios');
-Route::resource('armarios', 'HomeController@armarios');
-*/
 
+Route::post('cart', 'CartController@add')->name('cart.add');
+Route::post('cart', 'CartController@remove')->name('remove.add');
+//Route::get('cart', 'CartController@store')->name('cart.store');
 
 
 
@@ -77,6 +73,36 @@ Route::group(['middleware' => ['web']], function () {
 
 
 Auth::routes();
+
+Route::get('/add-to-cart/{id}',[
+    'uses'=>'CartController@getAddToCart',
+    'as' =>'product.addToCart'
+])->middleware('auth','role:user');
+
+
+
+
+
+
+Route::get('/shopping-cart',[
+    'uses'=>'CartController@getCart',
+    'as' =>'product.shoppingCart'
+]);
+
+
+Route::get('/checkout',[
+    'uses'=>'CartController@getCheckout',
+    'as'=>'checkout'
+])->middleware('auth','role:user');
+
+//Route::get('info_product', 'HomeController@show')->name('home.show');
+
+
+Route::get('/shopping-cart-delete','CartController@destroy');
+
+Route::resource('/shopping-cart-delete','CartController');
+
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('user','UserController')->middleware('auth','role:user');
@@ -174,3 +200,5 @@ Route::get('admin_sofas', 'UserController@admin_sofas');
 Route::get('admin_taburetes', 'UserController@admin_taburetes');
 
 Route::get("admin_search", "UserController@search");
+
+

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 /*!
@@ -107,6 +108,12 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
+
+
+h1 {
+  margin-top:6vw;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -185,6 +192,7 @@ a {
   color: #000000;
   text-decoration: none;
   background-color: transparent;
+
 }
 
 a:hover {
@@ -668,7 +676,7 @@ pre code {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px;
+
 }
 
 .no-gutters {
@@ -2173,11 +2181,10 @@ pre code {
 }
 
 .form-control {
-  display: block;
-  width: 100%;
-  height: calc(1.6em + 0.75rem + 2px);
+  margin-top:0.5vw;
+  height: 2vw;
   padding: 0.375rem 0.75rem;
-  font-size: 0.9rem;
+  font-size: 1vw;
   font-weight: 400;
   line-height: 1.6;
   color: #495057;
@@ -5018,7 +5025,7 @@ input[type=button].btn-block {
 
   flex-direction: column;
   min-width: 10vw;
-  margin-top: 6vw;
+  margin-top: 8vw;
   margin-bottom: 7vw;
   margin-right: 6vw;
   margin-left: 6vw;
@@ -5576,7 +5583,7 @@ a.badge-dark.focus {
 }
 
 .alert {
-  position: relative;
+
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
@@ -5793,6 +5800,7 @@ a.badge-dark.focus {
   display: flex;
   flex-direction: column;
   padding-left: 0;
+  margin-top:7vw;
   margin-bottom: 0;
   border-radius: 0.25rem;
 }
@@ -5817,7 +5825,7 @@ a.badge-dark.focus {
 }
 
 .list-group-item {
-  position: relative;
+
   display: block;
   padding: 0.75rem 1.25rem;
   background-color: #fff;
@@ -10965,4 +10973,5 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
 

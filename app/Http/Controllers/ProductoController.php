@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Cart;
 use App\Photos;
 use App\Producto;
 use App\User;
 use Illuminate\Http\Request;
+use mysql_xdevapi\Session;
 
 class ProductoController extends Controller
 {
@@ -60,7 +62,7 @@ class ProductoController extends Controller
                 'volum'=>$request->volum,
                 'oferta'=>$request->oferta,
                 'cantidad'=>$request->cantidad,
-                'precio_sin_montaje'=>$request->precio_sin_montaje,
+                'price'=>$request->price,
                 'precio_con_montaje'=>$request->precio_con_montaje,
                 'fragil'=>$request->fragil,
                 'foto'=>$path
@@ -90,18 +92,13 @@ class ProductoController extends Controller
      */
     public function show($id)
     {
-
         $products= Producto::all();
         $user=auth()->user()->id;
-
-
         return view('products_admin.all_products',compact('products','user'));
-        /*
-                $products_admin=Producto::find($id);
-                $users=User::all();
-                return view('products_admin.edit_product',compact('products_admin','users'));
-        */
+
     }
+
+
     public function info($id)
     {
         $products=Producto::all();
@@ -159,7 +156,7 @@ class ProductoController extends Controller
                 'volum'=>$request->volum,
                 'oferta'=>$request->oferta,
                 'cantidad'=>$request->cantidad,
-                'precio_sin_montaje'=>$request->precio_sin_montaje,
+                'price'=>$request->price,
                 'precio_con_montaje'=>$request->precio_con_montaje,
                 'fragil'=>$request->fragil,
                 'foto'=>$path
@@ -179,13 +176,10 @@ class ProductoController extends Controller
 
             }
         }
-         // return redirect()->route('products_admin.all_products');
 
-        //  return view('products_admin.all_products',compact('products_admin','user')); */
        return view('products_admin.all_products',compact('products'));
 
     }
-
 
 
     /**
@@ -197,10 +191,7 @@ class ProductoController extends Controller
     public function destroy($id)
     {
         Producto::destroy($id);
-
-        // return redirect()->route('products_admin.all_products')->with('success','Registro actualizado satisfactoriamente');
         return view('products_admin.all_products')->with('success','Registro actualizado satisfactoriamente');
 
-        //}
     }
 }

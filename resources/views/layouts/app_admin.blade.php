@@ -57,8 +57,8 @@
     <div>
         <form  role="search" action="{{url('admin_search')}}">
             <div class="form-group">
-                <input type="search" class="form-control" name='search' placeholder="Buscar mueble..." />
-                <button type="submit" class="btn btn-default">Buscar</button>
+                <input type="search" id="searchinput" name='search' placeholder="Buscar" />
+                <button type="submit" class="btn btn-default"><img  id="imgbuscar" src="/imagenes/iconos/lupa.png"></button>
             </div>
 
         </form>

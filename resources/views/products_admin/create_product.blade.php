@@ -48,8 +48,8 @@
             <br/>
 
 
-            <label for="precio_sin_montaje"> Precio sin montaje</label>
-            <input class="new-price" type="number" placeholder="Ejemplo: 23.22" name="precio_sin_montaje">
+            <label for="precio_sin_montaje"> Precio</label>
+            <input class="new-price" type="number" placeholder="Ejemplo: 23.22" name="price">
             <br/>
 
 

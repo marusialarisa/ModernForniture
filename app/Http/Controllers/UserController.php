@@ -17,7 +17,6 @@ class UserController extends Controller
         $usuario=auth()->user()->id;
         $user_info=User::find($usuario);
 
-
         $role=$user_info->hasRole("admin");
         if($role){
             $users=User::all();
@@ -80,28 +79,15 @@ class UserController extends Controller
             return view('info_product', compact('producto', 'photos', 'total', 'users', 'products'));
 
         }
-
-
-        /*
-             $products_admin=Producto::all();
-             $producto=Producto::find($id);
-             $users=User::all();
-
-             $photos= $producto->photos()->get('photo');
-             // dd($photos);
-             if($photos != null){
-                 $total = count($photos);
-             }
-
-             return view('info_product',compact('producto','photos','total','users','products_admin'));
-        */
     }
+
     /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function edit($id)
     {
         $id_user=auth()->user()->id;
@@ -124,6 +110,8 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+
     public function update(Request $request, $id)
     {
         $user=auth()->user()->id;
@@ -160,19 +148,6 @@ class UserController extends Controller
 
     public function ofertas()
     {
-      /*  $usuario=auth()->user()->id;
-        $user_info=User::find($usuario);
-
-        $role=$user_info->hasRole("admin");
-        if($role){
-            $users=User::all();
-            return view('admin.ofertas',compact('users','usuario'));
-        }else{
-            $users=User::all();
-
-        }
-        return view('ofertas',compact('users','usuario'));*/
-
         return view('ofertas');
     }
 
@@ -268,25 +243,32 @@ class UserController extends Controller
     }
 
 
+
+
     public function search(Request $request)
     {
         if($request){
             $query=trim($request->get('search'));
 
             $products=Producto::where('tipo_mueble','LIKE','%'.$query.'%')
+                ->orWhere('nombre_producto','LIKE','%'.$query.'%')
+                ->orWhere('descripcion','LIKE','%'.$query.'%')
                 ->orderBy('id','asc')
                 ->get();
-
             return view('products_admin.search',['products'=>$products, 'search'=>$query]);
         }
 
     }
+
+
+
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function destroy($id)
     {
         //
