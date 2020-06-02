@@ -2,13 +2,6 @@
 
 use Illuminate\Support\Str;
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
-
 
 return [
 
@@ -23,7 +16,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql://b379c33e77d6d1:8759d928@eu-cdbr-west-03.cleardb.net/heroku_a1f38ec375c5502?reconnect=true'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
 
 
@@ -52,7 +45,7 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
-
+/*
         'mysql://b379c33e77d6d1:8759d928@eu-cdbr-west-03.cleardb.net/heroku_a1f38ec375c5502?reconnect=true' => array(
             'driver' => 'mysql',
             'host' => $host,
@@ -63,17 +56,17 @@ return [
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
         ),
+*/
 
 
-/*
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'eu-cdbr-west-03.cleardb.net'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'username' => env('DB_USERNAME', 'b379c33e77d6d1'),
+            'password' => env('DB_PASSWORD', '8759d928'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -84,7 +77,7 @@ return [
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
-        ], */
+        ],
 
         'pgsql' => [
             'driver' => 'pgsql',
