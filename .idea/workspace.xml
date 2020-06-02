@@ -2,61 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63dfcfee-5ac8-411a-95cc-6b92274f6ea1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ModernForniture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ModernForniture.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Producto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Producto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_18_173127_create_productos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_18_173127_create_productos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/apphome.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/apphome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/novedades.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/novedades.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/ofertas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/ofertas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/info_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/info_product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app_admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/armarios.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/armarios.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/camas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/camas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/comodas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/comodas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/escritorios.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/escritorios.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/estanterias.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/estanterias.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/lamparas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/lamparas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/librerias.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/librerias.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/mesas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/mesas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/sillas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/sillas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/sillones.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/sillones.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/sofas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/sofas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_products/taburetes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_products/taburetes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/novedades.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/novedades.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ofertas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ofertas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/all_products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/all_products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/armarios.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/armarios.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/camas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/camas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/comodas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/comodas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/create_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/create_product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/edit_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/edit_product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/escritorios.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/escritorios.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/estanterias.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/estanterias.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/info_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/info_product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/lamparas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/lamparas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/librerias.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/librerias.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/mesas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/mesas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/sillas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/sillas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/sillones.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/sillones.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/sofas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/sofas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_admin/taburetes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_admin/taburetes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/search.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/user_home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/user_home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -404,9 +350,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="92" />
-    <option name="y" value="74" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="681" />
+    <option name="y" value="30" />
     <option name="width" value="1142" />
     <option name="height" value="589" />
   </component>
@@ -575,18 +521,17 @@
       <workItem from="1590665283656" duration="90287000" />
       <workItem from="1590839136928" duration="34252000" />
       <workItem from="1590921253708" duration="50037000" />
-      <workItem from="1591021662274" duration="33171000" />
+      <workItem from="1591021662274" duration="34144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="466089000" />
+    <option name="totallyTimeSpent" value="467062000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="30" width="1372" height="636" extended-state="6" />
-    <editor active="true" />
+    <frame x="681" y="30" width="1142" height="589" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29305136" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08683729" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -601,7 +546,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.05882353" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4859611" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.12941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
