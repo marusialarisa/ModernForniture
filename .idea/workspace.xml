@@ -144,7 +144,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -448,15 +448,15 @@
       <workItem from="1590665283656" duration="90287000" />
       <workItem from="1590839136928" duration="34252000" />
       <workItem from="1590921253708" duration="50037000" />
-      <workItem from="1591021662274" duration="35152000" />
+      <workItem from="1591021662274" duration="36172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="468070000" />
+    <option name="totallyTimeSpent" value="469090000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="179" y="57" width="1142" height="589" extended-state="0" />
+    <frame x="179" y="57" width="1142" height="589" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23765996" />
@@ -868,7 +868,7 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
