@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Str;
 
-
 return [
 
     /*
@@ -17,8 +16,6 @@ return [
     */
 
     'default' => env('DB_CONNECTION', 'mysql'),
-
-
 
     /*
     |--------------------------------------------------------------------------
@@ -45,28 +42,15 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
-/*
-        'mysql://b379c33e77d6d1:8759d928@eu-cdbr-west-03.cleardb.net/heroku_a1f38ec375c5502?reconnect=true' => array(
-            'driver' => 'mysql',
-            'host' => $host,
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
-            'charset' => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-            'prefix' => '',
-        ),
-*/
-
 
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'eu-cdbr-west-03.cleardb.net'),
+            'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'b490e003001449'),
-            'password' => env('DB_PASSWORD', '4e63f8ec'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
