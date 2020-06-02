@@ -15,7 +15,7 @@
 
                             @foreach($photos as $photo)
                                 <div class="carousel-item {{ $loop->first ? ' active' : '' }}">
-                                    <img id=" {{$tam = $tam + 1}}" src="{{asset('storage/'.$photo->photo)}}" class="element">
+                                    <img id=" {{$tam = $tam + 1}}" src="{{secure_asset('storage/'.$photo->photo)}}" class="element">
                                     <p class="slider-n">{{$tam ?? ''}}/{{$total}}</p>
                                     <p>  {{$photo->id}} </p></div>
                             @endforeach

@@ -12,7 +12,7 @@
             @foreach($products as $product)
                 @if($product->tipo_mueble == "Cama")
                     <div class="oferta">
-                        <a href="{{route('user.show',$product->id)}}"><img class="imagenessugeridas centrar" src="{{asset('storage/'.$product->foto)}}" alt="Foto mueble con el nombre: {{$product->nombre_producto}}"/>
+                        <a href="{{route('user.show',$product->id)}}"><img class="imagenessugeridas centrar" src="{{secure_asset('storage/'.$product->foto)}}" alt="Foto mueble con el nombre: {{$product->nombre_producto}}"/>
                             <br> <p class="centrar">{{$product->nombre_producto}} <br>({{$product->price}} €)</p></a>
 
                     </div>
