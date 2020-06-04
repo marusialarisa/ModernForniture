@@ -10,7 +10,7 @@
     <title>ModernForniture</title>
 
     <!-- Scripts -->
- 
+  <script src="/js/app.js" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
