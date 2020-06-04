@@ -285,7 +285,9 @@ input {
   overflow: visible;
 }
 
-input {width:40vw;}
+input {width:80%;
+    text-align: center;
+}
 
 button,
 select {
