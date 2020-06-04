@@ -52,7 +52,7 @@ class ProductoController extends Controller
         $user_info=User::find($user_id);
         $role=$user_info->hasRole("admin");
         if($role){
-            $path=$request->file('foto')->store('storage');
+            $path=$request->file('foto')->store('fotos','public');
             $producto=Producto::create(['id_usuario'=>$user_id,
                 'nombre_producto'=>$request->nombre_producto,
                 'marca'=>$request->marca,
@@ -72,7 +72,7 @@ class ProductoController extends Controller
 
             if($photos) {
                 foreach ($photos as $photo) {
-                    $path = $photo->store('storage');
+                    $path = $photo->store('fotos', 'public');
                     Photos::create([
                         'product_id' => $producto->id,
                         'photo' => $path
@@ -92,13 +92,18 @@ class ProductoController extends Controller
      */
     public function show($id)
     {
+
         $products= Producto::all();
         $user=auth()->user()->id;
+
+
         return view('products_admin.all_products',compact('products','user'));
-
+        /*
+                $products_admin=Producto::find($id);
+                $users=User::all();
+                return view('products_admin.edit_product',compact('products_admin','users'));
+        */
     }
-
-
     public function info($id)
     {
         $products=Producto::all();
@@ -140,7 +145,7 @@ class ProductoController extends Controller
         $products = Producto::find($id);
 
         if($request->file('foto')){
-            $path=$request->file('foto')->store('storage');
+            $path=$request->file('foto')->store('fotos','public');
         }
 
         else{
@@ -168,7 +173,7 @@ class ProductoController extends Controller
         if ($photos != null) {
 
             foreach ($photos as $photo) {
-                $path = $photo->store('storage');
+                $path = $photo->store('fotos', 'public');
                Photos::create([
                     'product_id' => $products->id,
                     'photo' => $path
@@ -176,10 +181,14 @@ class ProductoController extends Controller
 
             }
         }
+         // return redirect()->route('products_admin.all_products');
 
+        //  return view('products_admin.all_products',compact('products_admin','user')); */
        return view('products_admin.all_products',compact('products'));
 
     }
+
+
 
 
     /**
