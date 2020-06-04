@@ -17,7 +17,7 @@
         <div>
             @php
               //  $products=\App\Producto::first()->take(4)->get();
-              $products=\App\Producto::all;
+              $products=\App\Producto::all();
             @endphp
             @foreach($products as $product)
                 @if($product->oferta == "1")
@@ -39,7 +39,7 @@
         <div>
             @php
                // $products=\App\Producto::latest()->take(3)->get();
-                  $products=\App\Producto::all;
+                  $products=\App\Producto::all();
             @endphp
             @foreach($products as $product)
                 <div class="oferta">
