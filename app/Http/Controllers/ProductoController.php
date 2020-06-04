@@ -52,7 +52,7 @@ class ProductoController extends Controller
         $user_info=User::find($user_id);
         $role=$user_info->hasRole("admin");
         if($role){
-            $path=$request->file('foto')->store('public');
+            $path=$request->file('foto')->store('storage');
             $producto=Producto::create(['id_usuario'=>$user_id,
                 'nombre_producto'=>$request->nombre_producto,
                 'marca'=>$request->marca,
@@ -72,7 +72,7 @@ class ProductoController extends Controller
 
             if($photos) {
                 foreach ($photos as $photo) {
-                    $path = $photo->store('public');
+                    $path = $photo->store('storage');
                     Photos::create([
                         'product_id' => $producto->id,
                         'photo' => $path
@@ -140,7 +140,7 @@ class ProductoController extends Controller
         $products = Producto::find($id);
 
         if($request->file('foto')){
-            $path=$request->file('foto')->store('public');
+            $path=$request->file('foto')->store('storage');
         }
 
         else{
@@ -168,7 +168,7 @@ class ProductoController extends Controller
         if ($photos != null) {
 
             foreach ($photos as $photo) {
-                $path = $photo->store('public');
+                $path = $photo->store('storage');
                Photos::create([
                     'product_id' => $products->id,
                     'photo' => $path
