@@ -33,7 +33,7 @@
                 <li><a href="{{ url('admin_novedades') }}">Novedades</a></li>
                 <li><a href="{{ url('admin_armarios') }}">Armarios</a></li>
                 <li><a href="{{ url('admin_librerias') }}">Librerias</a></li>
-                <li><a href="{{ url('admine_stanterias') }}">Estanterias</a></li>
+                <li><a href="{{ url('admin_estanterias') }}">Estanterias</a></li>
                 <li><a href="{{ url('admin_escritorios') }}">Escritorios</a></li>
                 <li><a href="{{ url('admin_comodas') }}">Comodas</a></li>
                 <li><a href="{{ url('admin_mesas') }}">Mesas</a></li>
