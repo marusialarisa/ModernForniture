@@ -38,25 +38,7 @@ class CommentsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-  /*  public function store(Request $request, $post_id)
-    {
-        $this->validate($request, array(
-           'comment'=>'required|min:5|max:2000'
-        ));
 
-        $post=Post::find($post_id);
-
-        $comment= new Comment();
-        $comment->comment=$request->commet;
-        $comment->approved=true;
-        $comment->post()->associate($post);
-
-        $comment->save();
-
-        \Illuminate\Support\Facades\Session::flash('success', 'Se ha publicado el cometario');
-
-        return redirect()->back;
-    }*/
 
     public function store(Request $request,$id)
     {

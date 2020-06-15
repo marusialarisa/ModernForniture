@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<<<<<<< HEAD
+
 @section('content')
     @if(\Illuminate\Support\Facades\Session::has('cart'))
        <div class="row"> <div class="col6">
@@ -74,10 +74,9 @@
 @else <div class="row"> <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
 <h1>Todavia no has añadido ningún producto al carrito!</h1> </div> </div>
 @endif
-@endsection
-=======
 
-@section('content')
+
+
 
     @if(\Illuminate\Support\Facades\Session::has('cart'))
      <div class="row">
@@ -122,4 +121,3 @@
 
     @endif
     @endsection
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199

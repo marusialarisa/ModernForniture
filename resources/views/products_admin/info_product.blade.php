@@ -77,8 +77,7 @@
 
                     </div>
         </div>
-<<<<<<< HEAD
-=======
+
         <div id="derecha">
             <h1 class="titulogandreinformacion"><strong>Información producto</strong></h1><br/>
             @csrf
@@ -104,7 +103,7 @@
                         <br/> <strong>Fragil:   </strong> {{$producto->fragil}}
                     </td>
                 </tr>
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
+
 
         <br/>  <br/>
     </div>

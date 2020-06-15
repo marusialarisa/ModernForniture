@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<<<<<<< HEAD
+
    <br><br> <div class="rowcheck">
         <div class="offset-34">
             <p class="datos"><strong>Pago con tarjeta </strong><img src="/imagenes/VISA.svg" id="imgcard" alt=""/>
@@ -40,7 +40,7 @@
                 </div>
                {{--{{csrf_field()}}--}}
                 {{-- <a href="{{route('comprar')}}"><button type="submit" class="btn btn-primarycomprar">Comprar ahora</button></a>--}}
-=======
+
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
             <h1>Introduce tus datos</h1>
@@ -110,7 +110,6 @@
               </div>
                 {{csrf_field()}}
                 <button type="submit" class="btn btn-primaryregistrar">Comprar ahora</button>
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
             </form>
         </div>
     </div>
@@ -121,8 +120,5 @@
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 
 
-<<<<<<< HEAD
 @endsection
-=======
-@endsection
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
+

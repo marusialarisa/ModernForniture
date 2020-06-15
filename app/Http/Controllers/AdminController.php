@@ -29,10 +29,8 @@ class AdminController extends Controller
         $admin=User::all();
 
        return view('products_admin.users_info',compact('admin','users'));
-<<<<<<< HEAD
-=======
 
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
+
     }
 
     public function users()
@@ -69,11 +67,7 @@ class AdminController extends Controller
      */
     public function show($id)
     {
-<<<<<<< HEAD
-        //
-=======
-       //
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
+
     }
 
     /**
@@ -116,10 +110,7 @@ class AdminController extends Controller
 
     }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
     public function contactar()
     {

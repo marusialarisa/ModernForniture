@@ -81,10 +81,7 @@ class UserController extends Controller
             return view('info_product', compact('producto', 'photos', 'total', 'users', 'products'));
 
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     }
 
     /**
@@ -275,11 +272,10 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-<<<<<<< HEAD
+
 
     //eliminar productos del carrito
-=======
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
+
     public function destroy($id)
     {
         $oldCart = Session::has('cart') ? Session::get('cart') : null;
@@ -295,29 +291,4 @@ class UserController extends Controller
     }
 
 
-
-  /*  public function destroy(Request $request,$id)
-    {
-        $product = Producto::find($id);
-        $oldCart = Session::has('cart') ? Session::get('cart') : null;
-
-
-           $cart = new \App\Cart($oldCart);
-            $cart->remove($product, $product->id);
-            $request->session()->put('cart', $cart);
-
-            $oldCart = Session::get('cart');
-            $cart = new \App\Cart($oldCart);
-
-
-            $cart = Session::get('cart');
-            //  unset($cart->items['qty']);
-
-      //      unset($cart->items[$id]);
-
-
-        Session::put('cart', $cart);
-        // return redirect()->back();
-        return view('shop.shopping-cart', ['products' => $cart->items, 'totalPrice' => $cart->totalPrice]);
-    } */
 }

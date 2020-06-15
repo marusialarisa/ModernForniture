@@ -19,7 +19,7 @@ class CartController extends Controller
         return view('shop.shopping-cart')->with('product', $product);
     }
 
-<<<<<<< HEAD
+
     public function show($id)
     {
 
@@ -33,8 +33,7 @@ class CartController extends Controller
     }
 
 
-=======
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
+
     public function getAddToCart(Request $request, $id)
     {
         $product = Producto::find($id);
@@ -46,7 +45,7 @@ class CartController extends Controller
         return redirect()->back();
     }
 
-<<<<<<< HEAD
+
     public function getAddToCartProduct(Request $request, $id)
     {
         $product = Producto::find($id);
@@ -58,8 +57,7 @@ class CartController extends Controller
         return view('shop.shopping-cart', ['products' => $cart->items, 'totalPrice' => $cart->totalPrice]);
     }
 
-=======
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
+
     public function getCart()
     {
         if (!Session::has('cart')) {
@@ -95,11 +93,9 @@ class CartController extends Controller
                 "amount"=>$cart->totalPrice * 100,
                 "currency"=>"usd",
                 "source"=>$request->input('stripeToken'),
-<<<<<<< HEAD
+
                 "description"=>"Test cargar"
-=======
-                 "description"=>"Test cargar"
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
+
             ));
         }catch (\Exception $e){
             return redirect()->route('checkout')->width('error', $e->getMessage());
@@ -110,7 +106,7 @@ class CartController extends Controller
 
     }
 
-<<<<<<< HEAD
+
 //disminuir producto del carrito
     public function destroy(Request $request, $id)
     {
@@ -140,20 +136,5 @@ class CartController extends Controller
         return view('/home');
     }
 
-=======
 
-        public function destroy($id)
-    {
-        $cart = Session::get('cart');
-        unset($cart->items[$id]);
-        Session::put('cart', $cart);
-        return redirect()->back();
-
-        //$product = Producto::find($id);
-        // \App\Cart::remove($product);
-        // return redirect()->back();
-    }
-
-
->>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 }
