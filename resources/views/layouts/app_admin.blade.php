@@ -75,11 +75,6 @@
             <button type="submit" class="btn btn-default"><img  id="imgbuscar" src="/imagenes/iconos/lupa.png"></button>
 
 
-            <div class="form-group">
-                <input type="search" id="searchinput" name='search' placeholder="Buscar" />
-                <button type="submit" class="btn btn-default"><img  id="imgbuscar" src="/imagenes/iconos/lupa.png"></button>
-            </div>
-
         </form>
 
 

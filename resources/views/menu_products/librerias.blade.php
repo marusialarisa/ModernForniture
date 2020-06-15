@@ -15,7 +15,6 @@
 
                             <br> <p class="centrar">{{$product->nombre_producto}} <br><strong>{{$product->price}} €</strong></p></a>
 
-                            <br> <p class="centrar">{{$product->nombre_producto}} <br>({{$product->price}} €)</p></a>
 
                     </div>
                 @endif
