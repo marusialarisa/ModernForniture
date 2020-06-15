@@ -29,7 +29,7 @@
                 @foreach($products as $product)
                     <td class="tablastd"><br/><br/>
 
-                        @if($product->foto!=null)<img src="{{asset('storage/'.$product->foto)}}" width="150px" height="100px">@endif<br>
+                        @if($product->foto!=null)<img src="{{secure_asset('storage/'.$product->foto)}}" width="150px" height="100px">@endif<br>
                         <button class="btn-primaryregistrar"><a href="{{route('producto.info',$product->id)}}">Ver mas fotos</a></button>
 
                     </td>
