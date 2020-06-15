@@ -31,12 +31,9 @@ Route::get('/artisan/storage', function() {
 
 
 
-
-
 Route::get('info_product/{id}', 'HomeController@show')
     ->name('home.show');
 Route::resource('info_product','HomeController@show');
-
 
 
 //comentarios
@@ -49,7 +46,6 @@ Route::post('comments/{id}',
 );
 
 Route::delete('/comments/{id}/delete', 'CommentsController@destroy')->name('comments.destroy');
-
 
 
 
@@ -80,18 +76,7 @@ Route::get('taburetes', 'HomeController@taburetes');
 
 
 
-
 Route::get('cart', 'CartController@index')->name('cart.index');
-
-//Route::resource('cart', 'CartController@index');
-Route::get('cart', 'CartController@index')->name('cart.index');
-//Route::resource('product', 'CartController@index');
-
-
-Route::post('cart', 'CartController@add')->name('cart.add');
-Route::post('cart', 'CartController@remove')->name('remove.add');
-//Route::get('cart', 'CartController@store')->name('cart.store');
-
 
 
 Route::post('cart', 'CartController@add')->name('cart.add');
@@ -111,11 +96,9 @@ Route::get('/add-to-cart/{id}',[
 ])->middleware('auth','role:user');
 
 
-
 Route::get('/add-to-cart-product/{id}',[
     'uses'=>'CartController@getAddToCartProduct'
 ])->middleware('auth','role:user');
-
 
 
 
@@ -129,7 +112,6 @@ Route::get('/checkout',[
     'uses'=>'CartController@getCheckout',
     'as'=>'checkout'
 ])->middleware('auth','role:user');
-
 
 
 Route::get('/remove',[
@@ -167,16 +149,6 @@ Route::name('create_comment_path')->post('/info_product/{post}','PostController@
 
 Route::name('create_comment_path')->post('/info_product/{post}/coments','PostComentsController@create')->middleware('auth','role:user');
 */
-
-//Route::get('info_product', 'HomeController@show')->name('home.show');
-
-
-Route::get('/shopping-cart-delete','CartController@destroy');
-
-Route::resource('/shopping-cart-delete','CartController');
-
-
-
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('user','UserController')->middleware('auth','role:user');
@@ -274,5 +246,3 @@ Route::get('admin_sofas', 'UserController@admin_sofas');
 Route::get('admin_taburetes', 'UserController@admin_taburetes');
 
 Route::get("admin_search", "UserController@search");
-
-
