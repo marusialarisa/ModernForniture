@@ -77,6 +77,34 @@
 
                     </div>
         </div>
+<<<<<<< HEAD
+=======
+        <div id="derecha">
+            <h1 class="titulogandreinformacion"><strong>Información producto</strong></h1><br/>
+            @csrf
+
+
+            @csrf
+            @method('PUT')
+            <table class="table_info">
+                <thead>
+
+                <tr>
+                    <td class="textoizquierda">
+                        <strong>Nombre:   </strong> {{$producto->nombre_producto}}
+                        <br/> <strong>Marca:   </strong> {{$producto->marca}}
+                        <br/> <strong>Tipo mueble:   </strong> {{$producto->tipo_mueble}}
+                        <br/> <strong>Descripción:   </strong> {{$producto->descripcion}}
+                        <br/> <strong>Dimensiones:   </strong> {{$producto->dimensiones}}
+                        <br/> <strong>Volum:   </strong> {{$producto->volum}}
+                        <br/> <strong>Oferta:   </strong> {{$producto->oferta}}
+                        <br/> <strong>Cantidad:   </strong> {{$producto->cantidad}}
+                        <br/> <strong>Precio:   </strong> {{$producto->price}}
+                        <br/> <strong>Precio con montaje:   </strong> {{$producto->precio_con_montaje}}
+                        <br/> <strong>Fragil:   </strong> {{$producto->fragil}}
+                    </td>
+                </tr>
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
         <br/>  <br/>
     </div>

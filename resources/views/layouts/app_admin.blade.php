@@ -9,20 +9,32 @@
 
     <title>ModernForniture</title>
 
+<<<<<<< HEAD
     <!-- Scripts
     <script src="{{ asset('js/app.js') }}" defer></script> -->
     <script src="/js/app.js" defer></script>
+=======
+    <!-- Scripts -->
+  <script src="/js/app.js" defer></script>
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+<<<<<<< HEAD
     <!-- Styles
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/apphome.css') }}" rel="stylesheet"> -->
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/apphome.css" rel="stylesheet">
 
+=======
+    <!-- Styles -->
+     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/apphome.css" rel="stylesheet">
+ 
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 </head>
 <body>
 
@@ -61,10 +73,17 @@
     <!--SEARCH FORM --->
     <div id="buscar">
         <form  role="search" action="{{url('admin_search')}}">
+<<<<<<< HEAD
 
             <input type="search" id="searchinput" name='search' placeholder="Buscar" />
             <button type="submit" class="btn btn-default"><img  id="imgbuscar" src="/imagenes/iconos/lupa.png"></button>
 
+=======
+            <div class="form-group">
+                <input type="search" id="searchinput" name='search' placeholder="Buscar" />
+                <button type="submit" class="btn btn-default"><img  id="imgbuscar" src="/imagenes/iconos/lupa.png"></button>
+            </div>
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
         </form>
 

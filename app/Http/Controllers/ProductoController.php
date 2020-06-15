@@ -219,7 +219,10 @@ class ProductoController extends Controller
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     /**
      * Remove the specified resource from storage.
      *
@@ -230,5 +233,9 @@ class ProductoController extends Controller
     {
         Producto::destroy($id);
         return view('products_admin.all_products')->with('success','Registro actualizado satisfactoriamente');
+<<<<<<< HEAD
+=======
+
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     }
 }

@@ -81,11 +81,29 @@
                     </div>
         </div>
 
+<<<<<<< HEAD
         <br/>  <br/>
     </div>
     </div>
 
 
+=======
+            @csrf
+            @method('PUT')
+            <table class="table_info">
+                <thead>
+
+                <tr>
+                    <td class="textoizquierda">
+                        <strong>Nombre:   </strong> {{$producto->nombre_producto}}
+                        <br/> <strong>Marca:   </strong> {{$producto->marca}}
+                        <br/> <strong>Tipo mueble:   </strong> {{$producto->tipo_mueble}}
+                        <br/> <strong>Descripción:   </strong> {{$producto->descripcion}}
+                        <br/> <strong>Dimensiones:   </strong> {{$producto->dimensiones}}
+                        <br/> <strong>Volum:   </strong> {{$producto->volum}}
+                        <br/> <strong>Precio:   </strong> {{$producto->price}} €
+                        <br/> <strong>Precio con montaje:   </strong> {{$producto->precio_con_montaje}} €
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
     <div class="comentarios2">
             @if(\Illuminate\Support\Facades\Auth::guest())
@@ -96,12 +114,18 @@
                     <button class="btn-primaryregistrar"> <a href="{{route('comments.show',$producto->id)}}">Ver todos los comentarios</a></button>
                 </div>
 
+<<<<<<< HEAD
                 {{--- <form action="{{route('create_comment_path',['post'=>$producto->id])}}" method="post">--}}
                 <br><form action="{{route('comments.store',['id'=>$producto->id])}}" method="post">
                     @csrf
                     @method('POST')
                     <div class="form-group">
                         <label for="comment">Comentario: </label><br>
+=======
+                </thead>
+            </table>
+                <a href="{{route('product.addToCart',['id'=>$producto->id])}}"><button type="submit" class="btn-primaryregistrar">Añadir a la cesta</button><br></a>
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
                         <textarea rows="5" name="comment"  class="form-control" required oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')"></textarea>
                         <input class="edit-user" type="hidden" name="product_id" value="{{$producto->id}}">

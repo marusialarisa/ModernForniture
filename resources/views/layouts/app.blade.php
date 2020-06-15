@@ -10,7 +10,11 @@
     <title>ModernForniture</title>
 
     <!-- Scripts -->
+<<<<<<< HEAD
     <script src="{{ secure_asset('js/app.js') }}" defer></script>
+=======
+    <script src="{{secure_asset('js/app.js') }}" defer></script>
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -56,10 +60,17 @@
     <!--SEARCH FORM --->
     <div id="buscar">
         <form  role="search" action="{{url('search')}}">
+<<<<<<< HEAD
 
             <input type="search" id="searchinput" name='search' placeholder="Buscar" />
             <button type="submit" class="btn btn-default"><img  id="imgbuscar" src="/imagenes/iconos/lupa.png"></button>
 
+=======
+            <div class="form-group">
+                <input type="search" id="searchinput" name='search' placeholder="Buscar" />
+                <button type="submit" class="btn btn-default"><img  id="imgbuscar" src="/imagenes/iconos/lupa.png"></button>
+            </div>
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
         </form>
 
@@ -109,7 +120,11 @@
     </div>
 
 
+<<<<<<< HEAD
     <div id="carro"> <a class="nav-link" href="{{ route('product.shoppingCart')}}"><img src="/imagenes/iconos/carrito.png" id="imgcarro" alt="Icono del carrito" /><span id="numcar" >{{\Illuminate\Support\Facades\Session::has('cart') ? \Illuminate\Support\Facades\Session::get('cart')->totalQty:''}}</span></a></div>
+=======
+    <div> <a class="nav-link" href="{{ route('product.shoppingCart')}}"><img src="/imagenes/iconos/carrito.png" id="imgcarro" alt="Icono del carrito" /><span class="badge">{{\Illuminate\Support\Facades\Session::has('cart') ? \Illuminate\Support\Facades\Session::get('cart')->totalQty:''}}</span></a></div>
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
 
 </div>

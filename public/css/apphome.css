@@ -17,6 +17,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+<<<<<<< HEAD
 input[type=number]::-webkit-outer-spin-button,
 
 input[type=number]::-webkit-inner-spin-button {
@@ -39,6 +40,9 @@ input[type=number] {
 }
 
 p {text-align: center;}
+=======
+
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
 .contactomargin {
     margin-bottom: 5vw;
@@ -233,6 +237,24 @@ footer img {
     font-weight: bolder;
 }
 
+<<<<<<< HEAD
+=======
+#menu {
+    background-color:#a5c0bb;
+    width:100%;
+    font-size:1.0vw;
+    height: 3.2vw;
+    display: grid;
+    grid-gap:12vw;
+    grid-template-rows: repeat(1,8%);
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: row dense;
+    justify-items: start;
+    text-align: center;
+    position: fixed;
+    list-style: none;
+    top:0;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
 
 
@@ -331,10 +353,13 @@ ul, ol {
     display: inline-block;
 }
 
+<<<<<<< HEAD
 #iconomenu {
     grid-column-start:1;
     grid-row-start:2; }
 
+=======
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
 #imgmenu {
 
@@ -344,6 +369,7 @@ ul, ol {
     padding-left: 1vw;
 }
 
+<<<<<<< HEAD
 
 
 .comentarios2 {
@@ -354,6 +380,8 @@ ul, ol {
     width:10%; float:right; margin-right:70%;
 }
 
+=======
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 #imgbuscar {
 
 
@@ -398,7 +426,12 @@ ul, ol {
 #searchinput {
     font-size:1.2vw;
     border-radius:10px;
+<<<<<<< HEAD
     width:80%;
+=======
+
+    width:7vw;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     margin-top:1vh;
     outline:none;}
 
@@ -437,12 +470,17 @@ ul, ol {
     background-color: #a5c0bb;
     text-decoration: none;
     padding: 0.3vw;
+<<<<<<< HEAD
     margin-top: 1vw;
     margin-bottom: 1vw;
+=======
+    margin: 1vw;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     font-size: 0.9vw;
     color:black;
     text-align:center;
     width: 10vw;
+<<<<<<< HEAD
 }
 
 
@@ -457,6 +495,8 @@ ul, ol {
     color:black;
     text-align:center;
     width: 10vw;
+=======
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 }
 
 .btn-primaryeliminar{
@@ -495,6 +535,7 @@ ul, ol {
     display: inline-block;
     margin-top:1vw;
     margin-left:3vw;
+<<<<<<< HEAD
     font-size:1.5vw;
     width: 15vw;
 }
@@ -538,10 +579,13 @@ ul, ol {
 }
 
 .list-item{
+=======
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     width: 15vw;
     height: 10vw;
 }
 
+<<<<<<< HEAD
 .nombre{margin-left: 5vw;}
 .descrip{margin-left: 5vw}
 
@@ -549,6 +593,9 @@ ul, ol {
 .cant{text-align: center;}
 .anadir{text-align: left}
 .precio{text-align: center;}
+=======
+
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
 #comprassugeridas {
 
@@ -630,7 +677,11 @@ ul, ol {
 
     margin-left:5vw;
     font-size:2vw;
+<<<<<<< HEAD
     padding-top:5vw;
+=======
+    padding-top:1vw;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
 }
 
@@ -788,7 +839,11 @@ a:hover {
     #imgbuscar {
 
 
+<<<<<<< HEAD
         width:1vw;
+=======
+        width:2vw;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
     }
 
@@ -818,6 +873,7 @@ a:hover {
     .imagenessugeridas {
         width: 18vw;
         height: 15vw;
+<<<<<<< HEAD
     }
 
     #titulo {
@@ -826,6 +882,11 @@ a:hover {
         padding-top: 8vw;
     }
 
+=======
+    }
+
+
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 }
 
 
@@ -834,8 +895,15 @@ a:hover {
     label {
         margin-left:2vw;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
+    .form-control {
+
+        margin-left:2vw;
+    }
 
     .titulogrande {
         font-size:3.5vw;
@@ -855,8 +923,13 @@ a:hover {
     }
 
     #imglogo {
+<<<<<<< HEAD
         height: 2.9vw;
 
+=======
+        height: 3.9vw;
+        width:6vw;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     }
 
     footer img {
@@ -864,6 +937,7 @@ a:hover {
     }
 
     .form-group {
+<<<<<<< HEAD
         font-size:1.2vw;
     }
 
@@ -872,6 +946,17 @@ a:hover {
     #menu {
         height: 5.9vw;
         grid-template-rows: repeat(2,20%);
+=======
+        font-size:2vw;
+    }
+
+    .form-control {font-size: 2vw; height: 5vw;}
+
+
+    #menu {
+        height: 3.9vw;
+        grid-gap:9vw;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
         font-size: 1.1vw;
     }
 
@@ -880,10 +965,14 @@ a:hover {
     }
 
 
+<<<<<<< HEAD
     #titulo {
         margin-left: 5vw;
         font-size: 2vw;
         padding-top: 12vw;
+=======
+        min-height:35vw;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     }
 
 
@@ -893,6 +982,7 @@ a:hover {
         margin-top: 6.6vw;
     }
 
+<<<<<<< HEAD
     .btn-primaryregistrar {font-size:1.2vw;}
 
     .card {
@@ -903,6 +993,11 @@ a:hover {
     .cardlogin {
         margin-left: 26vw;
     }
+=======
+    .btn-primaryregistrar {font-size:1.7vw;}
+
+
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
 }
 
@@ -940,9 +1035,20 @@ a:hover {
         width:2vw;
     }
 
+
+
+    #imgbuscar {
+        width:2vw;
+    }
+
     #imgcarro {
+<<<<<<< HEAD
         height: 2vw;
         width: 2vw;
+=======
+        height: 4vw;
+        width: 4vw;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     }
 
     #menu {
@@ -955,9 +1061,13 @@ a:hover {
         font-size:1.5vw;
         border-radius:60px;
         margin-top:2vw;
+<<<<<<< HEAD
         outline:none;
 
     }
+=======
+        outline:none;}
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
     .botonverde {
         font-size:1.8vw;
@@ -982,9 +1092,12 @@ h4{font-size:3.2vw;}
         margin-bottom:6vw;
     }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 }
 
 
@@ -995,6 +1108,13 @@ h4{font-size:3.2vw;}
 
     body {font-size:2.2vw;}
 
+<<<<<<< HEAD
+=======
+    .card-body {
+
+        min-height:58vw;
+    }
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
     .list-group {
         margin-top:14vw; }
@@ -1013,6 +1133,7 @@ h4{font-size:3.2vw;}
     }
 
 
+
     #imgmenu{
         margin-top:1vw;
         height: 3vw;
@@ -1028,11 +1149,19 @@ h4{font-size:3.2vw;}
     .btn-primaryregistrar {
 
         width:20vw;
+<<<<<<< HEAD
         font-size: 1.8vw; }
 
     #menu {
         height: 9.2vw;
 
+=======
+        font-size: 2.8vw; }
+
+    #menu {
+        height: 6.2vw;
+        grid-gap:8.5vw;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
         font-size: 1.9vw;
     }
 
@@ -1066,11 +1195,16 @@ h4{font-size:3.2vw;}
         outline:none;}
 
 
+<<<<<<< HEAD
     .card {
         min-height: 52vw;
     }
 
     .form-group {font-size:1.7vw;}
+=======
+
+
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
 }
 
@@ -1081,12 +1215,15 @@ h4{font-size:3.2vw;}
 
     body {
         font-size:2.6vw;}
+<<<<<<< HEAD
 
     .btn-primarycomprar {
         font-size: 2vw;
         width: 17vw;
         margin-left: 4vw;
     }
+=======
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
     .titulograndemiperfil{
 
@@ -1094,6 +1231,7 @@ h4{font-size:3.2vw;}
 
     }
 
+<<<<<<< HEAD
     .address1 {
         width: 30vw;
     }
@@ -1101,6 +1239,9 @@ h4{font-size:3.2vw;}
     label {
         margin-left:4vw;
     }
+=======
+
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
     #imgnoticiasuno  {
         margin-top:10vw;
@@ -1127,9 +1268,25 @@ h4{font-size:3.2vw;}
     }
 
 
+<<<<<<< HEAD
     .card {
         min-height: 65vw;
     }
+=======
+
+    #menu {
+        height: 10vw;
+        grid-gap:2.8vw;
+        font-size: 2.8vw;
+    }
+
+    #imgmenu {
+        height:4vw;
+        width:5vw;
+        margin-top:1.5vw;
+    }
+
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
 
 
@@ -1141,7 +1298,11 @@ h4{font-size:3.2vw;}
 
     #searchinput {
         font-size:2.6vw;
+<<<<<<< HEAD
 
+=======
+        width:10vw;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
         border-radius:60px;
         margin-top:0.7vh;
         outline:none;}
@@ -1181,13 +1342,22 @@ h4{font-size:3.2vw;}
     }
 
     .form-group {
+<<<<<<< HEAD
         font-size:1.8vw;
     }
 
+=======
+        font-size:3.2vw;
+    }
 
+    .form-control {font-size: 3.2vw; height: 5vw;}
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
 }
 
+}
+
+<<<<<<< HEAD
 
 @media (max-width:380px) {
 
@@ -1209,6 +1379,15 @@ h4{font-size:3.2vw;}
     .address3 {
         width: 10vw;
         margin-left: 2vw;
+=======
+@media (max-width:380px) {
+
+
+    .imagenessugeridas {
+
+        width: 33vw;
+        height: 31vw;
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     }
 
     #imguser {
@@ -1227,6 +1406,11 @@ h4{font-size:3.2vw;}
     }
 
 
+<<<<<<< HEAD
+=======
+        min-height:65vw;
+    }
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
     .btn-primaryregistrar {
         text-align: center;
@@ -1246,7 +1430,11 @@ h4{font-size:3.2vw;}
         width:20vw;
         font-size: 3.2vw; }
 
+<<<<<<< HEAD
 
+=======
+    .form-control {font-size: 2.9vw; height: 5vw;}
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
 
     .btn-link {
         text-align: center;
@@ -1256,6 +1444,7 @@ h4{font-size:3.2vw;}
 
     footer {
         font-size: 3vw;
+<<<<<<< HEAD
     }
 
     #sobrenosotros img {width:9vw; margin-bottom: 25vw;}
@@ -1286,5 +1475,10 @@ h4{font-size:3.2vw;}
 
     #numcar {
         top: 50%;
+=======
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     }
+
+    #sobrenosotros img {width:9vw; margin-bottom: 25vw;}
+
 }

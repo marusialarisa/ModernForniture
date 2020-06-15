@@ -9,7 +9,11 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
+<<<<<<< HEAD
        "darryldecode/cart": "^4.1",
+=======
+        "darryldecode/cart": "^4.1",
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
@@ -17,9 +21,13 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "overtrue/laravel-shopping-cart": "~2.0",
+<<<<<<< HEAD
         "stripe/stripe-php": "3.*",
         "laravel/cashier": "~7.0"
 
+=======
+        "stripe/stripe-php": "3.*"
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -64,6 +72,13 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "chmod -R 777 public/"
+        ],
+        "post-install-cmd": [
+        "ln -sr storage/app/public public/storage"
         ]
     }
 }

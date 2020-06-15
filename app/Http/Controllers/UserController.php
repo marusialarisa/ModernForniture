@@ -19,7 +19,6 @@ class UserController extends Controller
         $usuario=auth()->user()->id;
         $user_info=User::find($usuario);
 
-
         $role=$user_info->hasRole("admin");
         if($role){
             $users=User::all();
@@ -82,14 +81,19 @@ class UserController extends Controller
             return view('info_product', compact('producto', 'photos', 'total', 'users', 'products'));
 
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     }
+
     /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function edit($id)
     {
         $id_user=auth()->user()->id;
@@ -112,6 +116,8 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+
     public function update(Request $request, $id)
     {
         $user=auth()->user()->id;
@@ -269,8 +275,11 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+<<<<<<< HEAD
 
     //eliminar productos del carrito
+=======
+>>>>>>> 84a82f7f7ec4dbd66221acbca08d16e454e41199
     public function destroy($id)
     {
         $oldCart = Session::has('cart') ? Session::get('cart') : null;
