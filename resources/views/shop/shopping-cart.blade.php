@@ -2,7 +2,7 @@
 @section('content')
     @if(\Illuminate\Support\Facades\Session::has('cart'))
         <div class="row"> <div class="col6">
-                <h5 class="resumen">Resumen de compra</h5>
+                <h1 class="resumen">Resumen de compra</h1>
                 <table  class="table">
                     <tr class="cart-title">
                         <th>Articulo</th>
