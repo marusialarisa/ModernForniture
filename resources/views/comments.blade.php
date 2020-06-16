@@ -44,10 +44,12 @@
                         <textarea rows="5" name="comment"  class="form-control" id="textocom" required oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')"></textarea>
                         <input class="edit-user" type="hidden" name="product_id" value="{{$producto->id}}"><br>
                         <button type="submit" class="btn-primaryregistrar">Publicar comentario</button><br>
-                        <a href="{{route('home.show',$producto->id)}}"><button class="btn-primaryregistrar">Volver atras</button></a>
 
                     </div>
                 </form>
+                
+           <a href="{{route('home.show',$producto->id)}}"><button class="btn-primaryregistrar">Volver atras</button></a>
+
         </div>
     </div>
 @endsection
