@@ -23,6 +23,11 @@ Route::get('/', function () {
     return view('home');
 });
 
+
+Route::get('/linkstorage', function () {
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+});
+
 Route::get('/artisan/storage', function() {
     $command = 'storage:link';
     $result = Artisan::call($command);
